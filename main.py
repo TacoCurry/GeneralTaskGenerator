@@ -1,5 +1,4 @@
-from Input import *
-from generation import *
+from input import *
 
-set_tasks()
-gen_task()
+sim_time, arr_rate, bt_min, bt_max = get_input()
+~~~

@@ -1,0 +1,8 @@
+# Simulation time
+1000
+
+# Arrival rate
+0.1
+
+# burst time range(MIN, MAX)
+3 10
