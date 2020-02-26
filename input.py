@@ -9,10 +9,15 @@ def get_input(input_file="input.txt"):
             sim_time = int(f.readline())
             arr_rate = float(f.readline())
 
-            temp = f.readline().split()
+            temp1 = f.readline().split()
 
-            bt_min = int(temp[0])
-            bt_max = int(temp[1])
+            bt_min = int(temp1[0])
+            bt_max = int(temp1[1])
+
+            temp2 = f.readline().split()
+
+            mem_total = int(temp2[0])
+            total_memory_usage = int(temp2[1])
 
             print("=======================================================")
             print("This is the Task Generation Input")
@@ -29,7 +34,12 @@ def get_input(input_file="input.txt"):
             print("bt_max")
             print(bt_max)
 
-            return sim_time, arr_rate, bt_min, bt_max
+            print("mem_total")
+            print(mem_total)
+
+            print("total_memory_usage")
+            print(total_memory_usage)
+            return sim_time, arr_rate, bt_min, bt_max, mem_total, total_memory_usage
 
     except FileNotFoundError:
         error("task 정보 파일을 찾을 수 없습니다.")
